@@ -32,19 +32,40 @@
             background-color: #0056b3;
             color: #ffffff;
         }
+
+        .tit{
+            background-color: aliceblue;
+            align-items: center;
+            justify-content: center;
+            border-radius: 20px;
+            position: relative; /* importante */
+            z-index: 1;         /* fica mais atrás */
+            }
+
+            input{
+                position: relative;
+                z-index: 2;/* fica na frente do .tit */
+            }
     
     </style>
-    <center>
+
+    
+   
     <div class="tit">
         <H1 style="font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif; ">Olá Mundo!!</H1>
     </div>
     <input type="search"><br>
     <button>Buscar</button>
-    </center>
+   
+
+
+    <footer>
+        <p style="text-align: center;">&copy; 2024 Teste GIT. Todos os direitos reservados.</p>
+    </footer>
 
 
 
 
-    
+
 </body>
 </html>
