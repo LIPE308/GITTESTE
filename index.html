@@ -1,83 +1,103 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-BR">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Teste GIT</title>
-</head>
-<body>
-    <style>
-            body {
-            background-color: antiquewhite;
-            }
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Tela de Login</title>
 
-            /* CONTAINER */
-            .tit {
-            background-color: aliceblue;
-            width: 350px;
-            padding: 20px;
-            border-radius: 20px;
-            position: relative;
-            z-index: 1;
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-            gap: 10px;
-            }
+<style>
+    *{
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
 
-            /* INPUT */
-            input {
-            border: none;
-            border-radius: 10px;
-            height: 50px;
-            width: 300px;
-            position: relative;
-            z-index: 2;
-            padding: 10px;
-            }
+    body{
+        background-color: antiquewhite;
+        height: 100vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-family: Arial, sans-serif;
+    }
 
-            /* BOTÃO */
-            button {
-            width: 100px;
-            margin-top: 10px;
-            background-color: white;
-            color: black;
-            border: none;
-            border-radius: 10px;
-            height: 30px;
-            transition: background-color 0.3s ease;
-            cursor: pointer;
-            }
+    .loginpai{
+        background-color: aliceblue;
+        width: 350px;
+        padding: 30px;
+        border-radius: 20px;
+        box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+    }
 
-            button:hover {
-            background-color: #0056b3;
-            color: white;
-            }
+    .tit{
+        text-align: center;
+        margin-bottom: 20px;
+    }
+
+    .tit h1{
+        color: #333;
+    }
+
+    input{
+        width: 100%;
+        height: 45px;
+        border: 1px solid #ccc;
+        border-radius: 10px;
+        padding: 10px;
+        margin-bottom: 15px;
+        outline: none;
+    }
+
+    input:focus{
+        border-color: #0056b3;
+    }
+
+    button{
+        width: 100%;
+        height: 45px;
+        background-color: #0056b3;
+        color: white;
+        border: none;
+        border-radius: 10px;
+        cursor: pointer;
+        transition: 0.3s;
+    }
+
+    button:hover{
+        background-color: #003d80;
+    }
+
+    .links{
+        text-align: center;
+        margin-top: 15px;
+    }
+
+    .links a{
+        text-decoration: none;
+        color: #0056b3;
+        font-size: 14px;
+    }
 </style>
-    </style>
+</head>
 
-    
-   <div class="loginpai">
+<body>
 
+<div class="loginpai">
     <div class="tit">
-        <H1 style="font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif; ">Olá Mundo!!</H1>
+        <h1>Login</h1>
     </div>
 
-    <input type="search"><br>
-    
-    <button>Buscar</button>
+    <form>
+        <input type="text" placeholder="Usuário" required>
+        <input type="password" placeholder="Senha" required>
 
-   </div>
-   
+        <button type="submit">Entrar</button>
+    </form>
 
-
-    <footer>
-        <p style="text-align: center;">&copy; 2024 Teste GIT. Todos os direitos reservados.</p>
-    </footer>
-
-
-
-
+    <div class="links">
+        <a href="#">Esqueci minha senha</a>
+    </div>
+</div>
 
 </body>
 </html>
